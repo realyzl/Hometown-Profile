@@ -1,0 +1,129 @@
+::-webkit-scrollbar {
+    display: none;
+}
+div::-webkit-scrollbar {
+    width: 0;
+    background: 0 0;
+}
+body{
+			background: url("../img/foxiang1.jpg") no-repeat center center fixed;
+	        -webkit-background-size: cover;
+	        -o-background-size: cover;                
+	        background-size: cover;
+}
+*{
+	margin: o;
+	padding: 0;
+}
+
+footer{
+	width: 100%;
+	height: 56px;
+	background-color: #646464;
+	/* position: fixed; */
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: aliceblue;
+	opacity: 0.7;
+}
+.main{
+	max-width: 1140px;
+	display: flex;
+	flex: 1;
+}
+.lunbotu{
+	width: 60%;
+	height: 450px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 0;
+}
+.block{
+	width: 100%;
+	height: 56;
+}
+.sige{
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+}
+.ditu{
+	/* height:500px; */
+}
+.biaoti{
+	font-size: 70px;
+	color: white;
+}
+.zhengwen{
+	font-size: 30px;
+	color: white;
+}
+.kapianzu{
+	max-width: 1140px;
+	flex: 1;
+	margin: auto;
+}
+.gotop{
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	color: white;
+}
+
+/* a标记动画 */
+a {
+    position: relative;
+    
+    text-decoration: none;
+    padding: 6px 18px;
+    /* background-color: #3ce745; */
+    transition: background-color 0.8s;
+}
+
+a:hover {
+    background-color: #e74c3c;
+}
+
+a::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e74c3c;
+    border-width: 0 0 2px 2px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e74c3c;
+    border-width: 2px 2px 0 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+a:hover::before {
+    left: -12px;
+    bottom: -12px;
+    opacity: 1;
+}
+
+a:hover::after {
+    top: -12px;
+    right: -12px;
+    opacity: 1;
+}
+/* ↑ */

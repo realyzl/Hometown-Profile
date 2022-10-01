@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>确山民俗</title>
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="res/bootstrap-icons-1.8.1/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<header>
+		<a class="navbar-brand" style="text-decoration: none;color: #fff;" href="index.html"><img src="img/yu.jpeg" style="width: 40px;" alt=""><i>见河南，大美确山</i></a>
+	</header>
+	<br>
+	<br>
+	<br>
+	<div class="container sige">
+	  <div class="row">
+	    <div class="col biaoti">确山铁花</div>
+	    <div class="col"></div>
+	    <div class="w-100"></div>
+	    <div class="col zhengwen">起源于北宋，鼎盛于明、清，至今已有千余年的历史。最早的确山打铁花活动，充满道教的色彩和行业的特征。“打铁花”的最初目的一是为了展示本行业的气派，取悦于群众，扩大影响，等于做一次广 告。二是讨个吉利，利用“花”与“发”的谐音，取“打花打花，越打越发”之意，象征着事业发达兴旺。</div>
+	    <div class="col"><video width="100%" controls>
+						<source src="img/video_tiehua.mp4" type="video/mp4">
+						<source src="movie.ogg" type="video/ogg">
+						<source src="movie.webm" type="video/webm">
+						<object data="movie.mp4" width="320" height="240">
+							<embed src="movie.swf" width="320" height="240">
+						</object> 
+					</video></div>
+	  </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container sige">
+	  <div class="row">
+	    <div class="col biaoti">确山方言</div>
+	    <div class="col"></div>
+	    <div class="w-100"></div>
+	    <div class="col zhengwen">确山处在北方方言区内。由于交通便利，群众之间交际频繁，其方言与周围各县差异不太大。主要特点是四个声调，没有入声，有20个声母，41个韵母，声母中没有舌尖后声母。但是，这些声母仅在语流中时而出现，规律性不强，主要表现在儿化时，声母往往变成舌尖后音。</div>
+	    <div class="col"></div>
+	  </div>
+	</div>
+	<footer>
+		<i>Created by @Yzl</i>
+	</footer>
+	
+	<div id="gotop" class="gotop">
+		<i class="bi bi-arrow-bar-up"></i>
+	</div>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+	<script>
+		function init() {
+		            if ($(window).scrollTop() > 50) {
+		                $("#gotop").fadeIn(200);
+		            } else {
+		                $("#gotop").fadeOut(200);
+		            }
+		        }
+		init();
+		 $(window).scroll(function() {
+		            init();
+		        });		
+		
+		jQuery(document).ready(function($){
+		 $('#gotop').click(function(){
+		      $('html,body').animate({scrollTop: '0px'}, 500);
+		 });});
+	</script>
+</body>
+</html>
